@@ -64,6 +64,22 @@ Con la operación de hoy, atender los tickets cuesta ≈ $85,500 MXN al mes (1,9
 
 ## 5. Alcance del MVP y no-objetivos  ⏱ 10 min
 
+### Flujo del MVP
+
+```
+Llega un ticket
+├─ "¿Dónde está mi pedido?" (34 %)
+│   └─ El agente consulta el estatus de la paquetería
+│       ├─ Sin incidencia → responde el estatus, sin prometer fecha
+│       └─ Con incidencia → pasa a una persona de soporte
+├─ Daño o reembolso (18 %)
+│   └─ El agente arma el expediente (historial, evidencia, una sola solicitud al cliente)
+│       ├─ ≤ $500 y ≤ 2 reclamos en 90 días → con recomendación; una persona aprueba
+│       └─ > $500 o > 2 reclamos en 90 días → sin recomendación; una persona decide
+│       (el agente nunca paga)
+└─ Otros motivos (48 %) → fuera del MVP, siguen como hoy
+```
+
 ### Casos de uso
 
 | # | Caso de uso | Criterio de aceptación (observable) |
