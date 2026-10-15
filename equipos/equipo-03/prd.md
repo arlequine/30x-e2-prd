@@ -1,4 +1,4 @@
-# PRD · <nombre del producto>
+# PRD · Asistente de cotización de grano B2B
 
 > Mini-PRD de la Estación 2. Diseñado para llenarse en 45 minutos.
 > Las secciones 1 a 5 son **obligatorias**; la 6 y la 7 son **deseables** (súmalas si les da el tiempo).
@@ -7,11 +7,11 @@
 
 | Campo | Valor |
 |---|---|
-| Producto | <!-- nombre corto --> |
+| Producto | Asistente de cotización de grano B2B |
 | Equipo | equipo-03 |
 | Segmento | Cafeterías B2B: cotizaciones y pedidos de mayoreo |
 | Track | PVB (cliente externo) |
-| Autores | <!-- nombres y rol: facilitador, escriba, abogado del diablo... --> |
+| Autores | Patricio Reinoso / , Julian Grijalba / , Silvia Ram / , Rafael Prudencio / Andrés Lopez / ,Edgar Bonilla / , Pablo Hoyos / rol: |
 | Fecha | 2026-10-14 |
 | Estado | Borrador |
 
@@ -19,31 +19,23 @@
 
 ## 1. Resumen en una línea  ⏱ 3 min
 
-<!--
-Formato:
-Para <usuario> que <problema>, <producto> es un <categoría> que <beneficio clave>.
-A diferencia de <lo que hacen hoy>, <diferenciador>.
-Si no cabe en dos líneas, todavía no saben qué están construyendo.
--->
+Asistente de cotización de grano B2B, dirigido a las cafeterías (clientes) para reducir el tiempo de respuesta de las cotizaciones, adicionalmente estandarizar el tiempo de entrega para dar una infromación veridica (recolectar variables de decición), fecha de entrega confirmados en menos de 2 horas. 
 
 ## 2. Problema y evidencia  ⏱ 7 min
 
-<!--
-- El problema en 2 o 3 frases, desde el punto de vista del usuario. Sin mencionar la solución.
-- Evidencia: al menos 2 datos del brief y 1 cita de usuario.
-- Costo de no hacer nada: ¿qué pasa si en 6 meses seguimos igual? Pónganle un número.
-Prueba: si la frase "no tenemos un agente" aparece como problema, vuelvan a empezar.
--->
+Se siente que el problema está en la estimación del tiempo de entrega.
 
-**Problema:**
+- Evidencia, "Para mayoreo necesito 5 días para tostar. No me prometan en 2." Tostador de Veracruz
 
-**Evidencia:**
+El precio en la tabla rígida con 25 o mas no da pie a decición de ventas.
 
--
--
--
+- Evidencia, "La mitad del trabajo es negociar. Si un bot da el precio de lista, perdemos a los mejores clientes."
 
-**Costo de no hacer nada:**
+- Costo perdida de clientes.
+
+Las facturas no se entregan a tiempo
+
+- Evidencia "Quiero mis facturas sin pedirlas tres veces."
 
 ## 3. Usuario, cliente y JTBD  ⏱ 7 min
 
@@ -56,27 +48,19 @@ Prueba: si la frase "no tenemos un agente" aparece como problema, vuelvan a empe
 
 | | |
 |---|---|
-| Usuario principal | |
-| Cliente (paga o decide) | |
-| Job to be done | Cuando …, quiero …, para … |
-| Alternativa actual | |
+| Usuario principal |  Dueño o encargado de compras de una cafetería |
+| Cliente (paga o decide) | decide comprar o no |
+| Job to be done | Cuando necesito reabastecer café, quiero saber el mismo día el precio y si me entregan a tiempo, para decidir si le compro a Grano o a otro. |
+| Alternativa actual | Queremos mejorar la experiencia del cliente al recibir una cotización mas acertada. |
 
 ## 4. Métricas  ⏱ 8 min
 
-<!--
-- North Star: el valor que recibe el usuario y que predice el negocio. Una sola.
-- Métricas de entrada: 2 palancas que el equipo puede mover y que empujan la North Star.
-- Guardrail: lo que NO puede empeorar mientras optimizan (margen, CSAT, errores...).
-Cada métrica lleva línea base (del brief), meta y plazo. Sin número no es métrica.
-"Número de conversaciones con el agente" es vanidad: mide uso, no valor.
--->
-
 | Tipo | Métrica | Línea base | Meta | Plazo |
 |---|---|---|---|---|
-| North Star | | | | |
-| Entrada | | | | |
-| Entrada | | | | |
-| Guardrail | | | | |
+| North Star | % de cotizaciones entregadas en menos de 2 h con precio y fecha correctos | ≈ 0 % (26 h promedio, 30 % con error) | 80 % | 3 meses |
+| Entrada | Tiempo promedio para cotizar | 26 h | < 2 h | 3 meses |
+| Entrada | % de cotizaciones con error de precio o disponibilidad | 30 % | < 5 % | 3 meses |
+| Guardrail | Ingreso mensual del canal B2B | $300,000 MXN | No baja de $300,000 MXN | 3 meses |
 
 ## 5. Alcance del MVP y no-objetivos  ⏱ 10 min
 
