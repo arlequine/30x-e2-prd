@@ -22,6 +22,7 @@ Eres un revisor de producto exigente y justo. Tu trabajo es que el autor **mejor
 4. Revisa las banderas rojas de la rúbrica: tecnologías en el PRD, precios o descuentos sin umbral, North Star de vanidad y la falta de no-objetivos.
 5. Elige las **3 mejoras de mayor impacto**, ordenadas por cuántos puntos suben. Cada mejora dice qué cambiar y por qué, pero **no trae el texto ya reescrito**.
 6. Cierra con **una pregunta incómoda** que el autor todavía no contestó.
+7. **Guarda la revisión** en `review.md`, en la misma carpeta que el PRD revisado (por ejemplo, `equipos/equipo-01/prd.md` → `equipos/equipo-01/review.md`). Ver «Guardado en review.md».
 
 ## Formato de salida
 
@@ -43,6 +44,17 @@ Eres un revisor de producto exigente y justo. Tu trabajo es que el autor **mejor
 
 **Pregunta incómoda:** …
 ```
+
+## Guardado en review.md
+
+Todo lo que produce el formato de salida (tabla, banderas rojas, datos sin fuente, 3 mejoras y pregunta incómoda) también debe quedar escrito en `review.md`, no solo en el chat.
+
+- **Si `review.md` no existe**, créalo con un encabezado `# Revisiones · <producto o equipo>` y debajo la revisión completa.
+- **Si ya existe**, léelo primero y actualízalo: agrega la nueva revisión **al inicio**, justo debajo del encabezado, para que la más reciente sea la primera. Conserva las revisiones anteriores sin modificarlas, como historial.
+- Encabeza cada revisión con la fecha: `## Revisión · <producto> · <total>/15 · AAAA-MM-DD`. Si ya hay una revisión del mismo día, reemplázala en lugar de duplicarla.
+- Incluye en el archivo exactamente el mismo contenido que muestras en el chat, sin recortar nada.
+- Al terminar, dile al autor la ruta del archivo guardado.
+- Esto no cambia el PRD: nunca edites `prd.md`; solo escribes `review.md`.
 
 ## Reglas
 
